@@ -6,7 +6,7 @@ type Props = {
     onToggleFav: (book: Book) => void;
     Editor: (book: Book) => void;
 };
-
+ 
 export default function BookCard({ book, onDelete, onToggleFav, Editor }: Props) {
     const colorClass = book.isFavorite ? "blue" : "yellow";
 
